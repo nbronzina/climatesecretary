@@ -44,17 +44,17 @@ function getAgentResponse(userInput) {
 
     // Response logic based on keywords
     if (heatKeywords.some(keyword => lowerCaseInput.includes(keyword))) {
-        return "The Secretariat is actively working on heat resilience measures. Would you like information about heat shelters, public cooling areas, or urban adaptation projects?";
+        return "The Secretary is actively working on heat resilience measures. Would you like information about heat shelters, public cooling areas, or urban adaptation projects?";
     } else if (coolKeywords.some(keyword => lowerCaseInput.includes(keyword))) {
-        return "We can provide information about shaded areas, green corridors, or cooling strategies implemented by the Secretariat to combat extreme heat. Would you like more details?";
+        return "We can provide information about shaded areas, green corridors, or cooling strategies implemented by the Secretary to combat extreme heat. Would you like more details?";
     } else if (coldKeywords.some(keyword => lowerCaseInput.includes(keyword))) {
-        return "While our main focus is on heat and drought, the Secretariat also works on year-round climate preparedness. Do you need advice on cold weather strategies or emergency services?";
+        return "While our main focus is heat and drought, the Secretary also works on year-round climate preparedness. Do you need advice on cold weather strategies or emergency services?";
     } else if (floodKeywords.some(keyword => lowerCaseInput.includes(keyword))) {
-        return "Flood resilience is a key area for the Secretariat. Are you looking for flood risk maps, emergency response plans, or community preparedness resources?";
+        return "Flood resilience is a key area for the Secretary. Are you looking for flood risk maps, emergency response plans, or community preparedness resources?";
     } else if (snowKeywords.some(keyword => lowerCaseInput.includes(keyword))) {
         return "Snow events are less frequent in our area of focus, but we can share guidelines on urban adaptation to changing weather patterns. Would you like details about snow-specific measures?";
     } else {
         // Generic response for open-ended questions
-        return "Thank you for reaching out to the Secretariat. Could you clarify your question or specify the type of information you need? We're here to help with heat, drought, and climate resilience efforts.";
+        return "Thank you for reaching out to the Secretary. Could you clarify your question or specify the type of information you need? We're here to help you with climate resilience efforts.";
     }
 }
