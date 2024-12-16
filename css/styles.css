@@ -307,3 +307,64 @@ footer {
     padding: 10px 0;
     font-size: 0.9em;
 }
+
+SPECIFIC STYLES
+
+/* About Section */
+.about-section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Leadership Section */
+.leader-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.leader-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #FFB347;
+}
+
+.leader-text h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.leader-text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Live Data List */
+.live-data {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.live-data li {
+    background-color: #EAF2F8;
+    border: 1px solid #DDD;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+.live-data strong {
+    color: #003366;
+    font-weight: bold;
+}
