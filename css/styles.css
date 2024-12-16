@@ -2,10 +2,31 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #F4F4F4; /* Fondo neutro */
-    color: #2C3E50; /* Texto principal */
-    line-height: 1.6;
+    background-color: #F4F4F4;
+    color: #2C3E50;
+}
+
+header, footer {
+    background-color: #2C3E50;
+    color: white;
+}
+
+header .header-status-bar {
+    text-align: center;
+    background-color: #D35400;
+    padding: 5px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.section {
+    padding: 20px 50px;
 }
 
 h1, h2, h3 {
@@ -80,9 +101,11 @@ a:hover {
 }
 
 .welcome-section {
-    background-color: #EDEDED; /* Fondo gris claro */
+    background: url('../img/welcome.png') center/cover no-repeat;
+    color: white;
     text-align: center;
-    padding: 60px 30px;
+    padding: 80px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .welcome-section h1 {
@@ -120,22 +143,15 @@ a:hover {
 /* Programs Section */
 .program-cards {
     display: flex;
-    justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .program-card {
     background-color: #EDEDED;
-    border: 1px solid #D35400;
-    padding: 20px;
-    width: 300px;
-}
-
-.program-card h3 {
-    margin-top: 0;
-    font-size: 1.3em;
-    color: #2C3E50;
+    padding: 15px;
+    border: 2px solid #D35400;
+    text-align: center;
 }
 
 /* Chief Section Styling */
