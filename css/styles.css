@@ -120,38 +120,13 @@ a:hover {
     margin: 0 auto;
 }
 
-/* Monitoring Section */
-.monitor-content {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.monitor-map img {
-    width: 300px; /* Reducir el tamaño del mapa */
-    height: auto;
-    border: 2px solid #D35400; /* Borde naranja */
-}
-
-.monitor-indicators p {
+/* About Section */
+.about-section p {
     font-size: 1.1em;
-    color: #2C3E50;
-}
-
-/* Programs Section */
-.program-cards {
-    display: flex;
-    gap: 20px;
-    justify-content: space-around;
-}
-
-.program-card {
-    background-color: #EDEDED;
-    padding: 15px;
-    border: 2px solid #D35400;
-    text-align: center;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    color: #4B4B4B;
 }
 
 /* Chief Section Styling */
@@ -183,8 +158,8 @@ a:hover {
 }
 
 .chief-image {
-    width: 180px;
-    height: 180px;
+    width: 150px; /* Tamaño reducido */
+    height: 150px;
     background-size: cover;
     background-position: center;
     border: 3px solid #D35400;
@@ -208,6 +183,40 @@ a:hover {
     color: #4B4B4B;
     margin: 0;
     line-height: 1.6;
+}
+
+/* Monitoring Section */
+.monitor-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.monitor-map img {
+    width: 250px; /* Tamaño reducido del mapa */
+    height: auto;
+    border: 2px solid #D35400; /* Borde naranja */
+}
+
+.monitor-indicators p {
+    font-size: 1.1em;
+    color: #2C3E50;
+}
+
+/* Programs Section */
+.program-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.program-card {
+    background-color: #EDEDED;
+    padding: 15px;
+    border: 2px solid #D35400;
+    text-align: center;
 }
 
 /* Footer */
