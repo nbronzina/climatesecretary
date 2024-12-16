@@ -13,67 +13,134 @@ h1, h2, h3 {
     margin: 0;
 }
 
+p {
+    margin: 10px 0;
+}
+
+a {
+    color: #0056B3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Header */
 .header-status-bar {
-    background-color: #D35400; /* Naranja oscuro institucional */
-    color: #FFFFFF; /* Texto blanco */
+    background-color: #D35400; /* Naranja oscuro */
+    color: #FFFFFF;
     text-align: center;
     font-weight: bold;
     padding: 8px 0;
 }
 
 .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #2C3E50; /* Azul oscuro */
     color: #FFFFFF;
     padding: 15px 30px;
 }
 
-/* Navigation Menu */
-.nav-menu a {
-    color: #FFFFFF; /* Texto blanco */
-    text-decoration: none;
+.logo-container img {
+    height: 50px;
 }
 
-.nav-menu a:hover {
-    text-decoration: underline;
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 /* Section Styles */
 .section {
-    background-color: #FFFFFF; /* Blanco para secciones */
+    background-color: #FFFFFF; /* Fondo limpio */
     padding: 50px 30px;
-    border-bottom: 1px solid #E0E0E0;
+}
+
+.section h2 {
+    color: #2C3E50;
+    border-bottom: 2px solid #D35400;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .welcome-section {
-    background-color: #EDEDED; /* Gris claro alternativo */
+    background-color: #EDEDED; /* Fondo gris claro */
     text-align: center;
-    color: #2C3E50;
+    padding: 60px 30px;
 }
 
 .welcome-section h1 {
-    color: #2C3E50;
+    font-size: 2.2em;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.monitor-section {
-    background-color: #FFFFFF; /* Sección limpia */
+.welcome-section p {
+    color: #4B4B4B;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Monitoring Section */
+.monitor-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.monitor-map img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #DDD;
 }
 
 .monitor-indicators p {
-    color: #4B4B4B; /* Texto secundario en gris oscuro */
-}
-
-.program-card {
-    background-color: #EDEDED; /* Fondo de tarjeta neutro */
-    border: 1px solid #D35400; /* Línea de acento naranja */
-    padding: 20px;
+    font-size: 1.1em;
     color: #2C3E50;
 }
 
+/* Programs Section */
+.program-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.program-card {
+    background-color: #EDEDED;
+    border: 1px solid #D35400;
+    padding: 20px;
+    width: 300px;
+}
+
+.program-card h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+    color: #2C3E50;
+}
+
+/* Footer */
 footer {
-    background-color: #2C3E50; /* Azul oscuro */
-    color: #FFFFFF; /* Texto blanco */
+    background-color: #2C3E50;
+    color: #FFFFFF;
     text-align: center;
     padding: 15px;
+    font-size: 0.9em;
 }
