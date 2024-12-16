@@ -25,33 +25,44 @@ a:hover {
 }
 
 /* Header and Footer */
-header, footer {
+header {
     background-color: #003366; 
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Header Status Bar */
 header .header-status-bar {
     background-color: #FFB347;
     color: #333333;
     padding: 5px;
     font-weight: bold;
+    text-align: center;
 }
-
 /* Header Logo Styles */
 .logo-container {
     display: flex;
-    justify-content: center; /* Centra las imágenes horizontalmente */
+    justify-content: space-between; /* Espaciado entre los logos */
     align-items: center; /* Alineación vertical */
-    gap: 10px; /* Espaciado entre las imágenes */
-    padding: 5px 0; /* Espaciado vertical */
-    background-color: #FFCC33; /* Amarillo de fondo */
+    padding: 10px 20px; /* Espaciado alrededor del contenedor */
+    max-width: 1200px; /* Máximo ancho del header */
+    margin: 0 auto; /* Centrado horizontal */
 }
 
 .logo-container img {
-    height: 80px; /* Tamaño uniforme en altura */
+    height: 60px; /* Ajusta la altura de las imágenes */
     width: auto; /* Mantiene la proporción */
+}
+
+.logo-container img:first-child {
+    margin-left: 10px; /* Espacio a la izquierda del primer logo */
+}
+
+.logo-container img:last-child {
+    margin-right: 10px; /* Espacio a la derecha del último logo */
 }
 
 /* Navigation Menu */
