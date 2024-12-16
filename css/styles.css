@@ -41,15 +41,16 @@ header .header-status-bar {
 
 /* Header Logo Styles */
 .logo-container {
-    display: flex; /* Alinea las imágenes horizontalmente */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Alinea verticalmente */
-    gap: 20px; /* Espacio entre las imágenes */
-    padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espaciado entre las imágenes */
+    padding: 5px 0; /* Espaciado vertical */
+    background-color: #FFCC33; /* Amarillo de fondo */
 }
 
 .logo-container img {
-    max-height: 80px; /* Tamaño máximo de altura */
+    height: 80px; /* Tamaño uniforme en altura */
     width: auto; /* Mantiene la proporción */
 }
 
