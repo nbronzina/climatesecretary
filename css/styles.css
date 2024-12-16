@@ -1,263 +1,79 @@
-/* Estilos Generales */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
-
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4F4F4;
-    color: #333333;
+    background-color: #F4F4F4; /* Fondo neutro */
+    color: #2C3E50; /* Texto principal */
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #2C3E50;
+    color: #2C3E50; /* Encabezados en azul oscuro */
     margin: 0;
 }
 
-a {
-    color: #0056B3;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Encabezado */
+/* Header */
 .header-status-bar {
-    background-color: #D35400;
-    color: #FFFFFF;
+    background-color: #D35400; /* Naranja oscuro institucional */
+    color: #FFFFFF; /* Texto blanco */
     text-align: center;
-    font-size: 0.85em;
-    padding: 8px 0;
     font-weight: bold;
+    padding: 8px 0;
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2C3E50;
+    background-color: #2C3E50; /* Azul oscuro */
     color: #FFFFFF;
     padding: 15px 30px;
 }
 
-.header-content .logo-container img {
-    height: 50px;
-    margin-right: 15px;
-}
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-menu li {
-    display: inline;
-}
-
+/* Navigation Menu */
 .nav-menu a {
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 0.95em;
+    color: #FFFFFF; /* Texto blanco */
+    text-decoration: none;
 }
 
-/* Sección General */
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
 .section {
+    background-color: #FFFFFF; /* Blanco para secciones */
     padding: 50px 30px;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #E0E0E0;
 }
 
-.section h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: #2C3E50;
-    border-bottom: 2px solid #D35400;
-    padding-bottom: 5px;
-}
-
-/* Sección Inicio */
 .welcome-section {
-    background: url(images/isologo2.png) no-repeat center center;
-    background-size: cover;
+    background-color: #EDEDED; /* Gris claro alternativo */
     text-align: center;
-    padding: 100px 20px;
-    color: #FFFFFF;
-    border-bottom: 2px solid #D35400;
+    color: #2C3E50;
 }
 
-.welcome-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+.welcome-section h1 {
+    color: #2C3E50;
+    font-weight: bold;
 }
 
-.welcome-content h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.welcome-content p {
-    font-size: 1.1em;
-}
-
-/* Sección Monitoreo */
 .monitor-section {
-    background-color: #F9F9F9;
-    padding: 40px 30px;
+    background-color: #FFFFFF; /* Sección limpia */
 }
 
-.monitor-content {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.monitor-map img {
-    width: 100%;
-    max-width: 400px;
-    border: 1px solid #CCCCCC;
-}
-
-.monitor-indicators {
-    font-size: 1em;
-    color: #333333;
-}
-
-/* Tarjetas de Programas */
-.program-section {
-    background-color: #FFFFFF;
-}
-
-.program-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
-    max-width: 1000px;
-    margin: 0 auto;
+.monitor-indicators p {
+    color: #4B4B4B; /* Texto secundario en gris oscuro */
 }
 
 .program-card {
-    background-color: #F9F9F9;
-    border: 1px solid #CCCCCC;
+    background-color: #EDEDED; /* Fondo de tarjeta neutro */
+    border: 1px solid #D35400; /* Línea de acento naranja */
     padding: 20px;
-    width: 100%;
-    max-width: 300px;
-    font-size: 0.95em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.program-card h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
     color: #2C3E50;
 }
 
-.progress-bar-container {
-    background-color: #E0E0E0;
-    height: 10px;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.progress {
-    height: 10px;
-    background-color: #D35400;
-}
-
-/* Sección Chief Officer */
-.chief-section {
-    background-color: #F9F9F9;
-    padding: 50px 30px;
-    text-align: center;
-}
-
-.chief-content {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.chief-text {
-    text-align: left;
-    font-size: 1em;
-}
-
-.chief-image {
-    width: 150px;
-    height: 150px;
-    background-color: #CCCCCC;
-    background-size: cover;
-    background-position: center;
-}
-
-/* Chatbot */
-.contact-section {
-    background-color: #FFFFFF;
-    padding: 40px 30px;
-    text-align: center;
-    border-top: 2px solid #CCCCCC;
-}
-
-.chatbox {
-    border: 1px solid #CCCCCC;
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #F4F4F4;
-    height: 300px;
-    overflow-y: auto;
-    font-size: 0.9em;
-}
-
-.input-section {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.input-section input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #CCCCCC;
-    font-size: 1em;
-}
-
-.input-section button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #D35400;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.input-section button:hover {
-    background-color: #E67E22;
-}
-
-/* Footer */
 footer {
-    background-color: #2C3E50;
-    color: #FFFFFF;
-    padding: 20px;
+    background-color: #2C3E50; /* Azul oscuro */
+    color: #FFFFFF; /* Texto blanco */
     text-align: center;
-    font-size: 0.85em;
+    padding: 15px;
 }
