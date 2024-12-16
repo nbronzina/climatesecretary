@@ -20,6 +20,21 @@ header .header-status-bar {
     color: #333333;
     padding: 5px;
     font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.logo-container img {
+    max-height: 60px; /* Tamaño ajustado del logo */
+    width: auto;
 }
 
 /* Navigation Menu */
@@ -111,11 +126,13 @@ header .header-status-bar {
 
 .monitor-map img {
     width: 100%;
-    max-width: 600px; /* Imagen centrada y con tamaño controlado */
+    max-width: 500px; /* Tamaño ajustado */
+    height: auto;
     display: block;
     margin: 0 auto;
     border: 2px solid #FFB347;
     border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .monitor-content div {
@@ -146,8 +163,17 @@ header .header-status-bar {
 }
 
 /* Contact Form */
-.contact-form input, .contact-form textarea {
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
     width: 100%;
+    max-width: 400px;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #CCC;
