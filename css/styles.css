@@ -308,6 +308,17 @@ footer {
     font-size: 0.9em;
 }
 
+footer a {
+    color: white; /* Cambia el color del enlace a blanco */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Efecto de transición para hover */
+}
+
+footer a:hover {
+    color: #FFB347; /* Cambia a naranja al pasar el mouse */
+}
+
 SPECIFIC STYLES
 
 /* About Section */
