@@ -1,23 +1,28 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     background-color: #f5f5f5;
     color: #333;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
+/* Header and Footer */
 header, footer {
-    background-color: #004d99;
+    background-color: #003366; /* Azul más suave */
     color: white;
     text-align: center;
     padding: 10px 0;
 }
 
 header .header-status-bar {
-    background-color: #ff5722;
+    background-color: #FFB347; /* Naranja sutil */
+    color: #333333;
     padding: 5px;
+    font-weight: bold;
 }
 
+/* Navigation Menu */
 .nav-menu {
     display: flex;
     justify-content: center;
@@ -26,18 +31,149 @@ header .header-status-bar {
     margin: 10px 0;
 }
 
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #FFB347;
+}
+
+/* Welcome Section */
 .welcome-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #eef;
+    background-color: #EAF2F8;
+    color: #003366;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #444;
+}
+
+/* Program Cards */
+.program-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
 .program-card {
-    background: white;
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 250px;
+    background: #FFFFFF;
+    border: 1px solid #DDD;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
     text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.program-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.program-card p {
+    color: #555;
+    font-size: 1em;
+}
+
+/* Monitoring Section */
+.monitor-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.monitor-map img {
+    width: 100%;
+    max-width: 600px; /* Imagen centrada y con tamaño controlado */
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #FFB347;
+    border-radius: 5px;
+}
+
+.monitor-content div {
+    max-width: 400px;
+    text-align: left;
+}
+
+.monitor-content p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Sections General */
+.section {
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFB347;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #FFB347;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
 }
