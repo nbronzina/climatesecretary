@@ -39,6 +39,20 @@ header .header-status-bar {
     font-weight: bold;
 }
 
+/* Header Logo Styles */
+.logo-container {
+    display: flex; /* Alinea las imágenes horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 10px 0;
+}
+
+.logo-container img {
+    max-height: 80px; /* Tamaño máximo de altura */
+    width: auto; /* Mantiene la proporción */
+}
+
 /* Navigation Menu */
 .nav-menu {
     display: flex;
@@ -141,7 +155,7 @@ header .header-status-bar {
     padding: 0;
 }
 
-.live-data li {
+live-data li {
     background: #EAF2F8;
     border: 1px solid #DDD;
     padding: 8px 10px;
@@ -150,7 +164,7 @@ header .header-status-bar {
     font-size: 1em;
 }
 
-.live-data strong {
+live-data strong {
     color: #003366;
 }
 
