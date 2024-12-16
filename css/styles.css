@@ -105,9 +105,9 @@ a:hover {
 }
 
 .monitor-map img {
-    max-width: 100%;
+    width: 300px; /* Reducir el tamaño del mapa */
     height: auto;
-    border: 1px solid #DDD;
+    border: 2px solid #D35400; /* Borde naranja */
 }
 
 .monitor-indicators p {
