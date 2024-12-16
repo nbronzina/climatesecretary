@@ -1,4 +1,4 @@
-const OPENAI_API_KEY = "TU_API_KEY"; // Usa una variable segura o archivo .env
+const OPENAI_API_KEY = "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"; // Usa una variable segura o archivo .env
 
 async function sendMessage() {
     const userInput = document.getElementById('user-input');
@@ -28,7 +28,7 @@ async function sendMessage() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${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}`
+                'Authorization': `Bearer ${OPENAI_API_KEY}`
             },
             body: JSON.stringify({
                 model: "gpt-4",
