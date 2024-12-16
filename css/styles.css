@@ -142,24 +142,21 @@ header .header-status-bar {
 /* Monitoring Section */
 .monitor-content {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+    align-items: flex-start; /* Alineación superior */
     justify-content: center;
     padding: 20px;
 }
 
 .monitor-map img {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px; /* Ajustar tamaño del mapa */
     border: 2px solid #FFB347;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
-.map-description {
-    font-size: 0.9em;
-    text-align: center;
-    color: #555;
+.live-data {
+    flex: 1; /* Ocupa el espacio restante */
 }
 
 .live-data ul {
@@ -167,7 +164,7 @@ header .header-status-bar {
     padding: 0;
 }
 
-live-data li {
+.live-data li {
     background: #EAF2F8;
     border: 1px solid #DDD;
     padding: 8px 10px;
@@ -176,41 +173,38 @@ live-data li {
     font-size: 1em;
 }
 
-live-data strong {
+.live-data strong {
     color: #003366;
 }
 
 .alerts {
+    margin-top: 20px;
     background-color: #FFFAE6;
     border: 1px solid #FFB347;
     padding: 15px;
-    margin: 20px auto;
-    max-width: 600px;
     border-radius: 5px;
+    color: #333;
+    font-size: 0.95em;
 }
 
 .alerts h3 {
     color: #D35400;
-    text-align: center;
     margin-bottom: 10px;
 }
 
 .alerts ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .alerts li {
     margin-bottom: 8px;
-    color: #555;
     font-weight: bold;
 }
 
 .alerts li strong {
     color: #D35400;
 }
-
 /* Section General */
 .section {
     padding: 40px 20px;
