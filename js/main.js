@@ -35,7 +35,7 @@ function getAgentResponse(userInput) {
     // Convert user input to lowercase for easier keyword detection
     const lowerCaseInput = userInput.toLowerCase();
 
-    // Keywords and responses
+    // Keywords and responses related to the secretariat
     const heatKeywords = ['heat', 'hot', 'temperature', 'warm'];
     const coolKeywords = ['cool', 'chill', 'fresh'];
     const coldKeywords = ['cold', 'freeze', 'frost', 'icy'];
@@ -44,17 +44,17 @@ function getAgentResponse(userInput) {
 
     // Response logic based on keywords
     if (heatKeywords.some(keyword => lowerCaseInput.includes(keyword))) {
-        return "Extreme heat can be challenging. Are you looking for ways to stay cool or information about heat alerts?";
+        return "The Secretariat is actively working on heat resilience measures. Would you like information about heat shelters, public cooling areas, or urban adaptation projects?";
     } else if (coolKeywords.some(keyword => lowerCaseInput.includes(keyword))) {
-        return "Cool spots are essential during heat waves. Would you like to know about shaded areas or cooling centers nearby?";
+        return "We can provide information about shaded areas, green corridors, or cooling strategies implemented by the Secretariat to combat extreme heat. Would you like more details?";
     } else if (coldKeywords.some(keyword => lowerCaseInput.includes(keyword))) {
-        return "Cold weather can bring its own challenges. Do you need advice on staying warm or information about winter preparedness?";
+        return "While our main focus is on heat and drought, the Secretariat also works on year-round climate preparedness. Do you need advice on cold weather strategies or emergency services?";
     } else if (floodKeywords.some(keyword => lowerCaseInput.includes(keyword))) {
-        return "Flooding is a serious concern. Are you asking about flood preparedness or specific flood alerts?";
+        return "Flood resilience is a key area for the Secretariat. Are you looking for flood risk maps, emergency response plans, or community preparedness resources?";
     } else if (snowKeywords.some(keyword => lowerCaseInput.includes(keyword))) {
-        return "Snow can be both beautiful and dangerous. Would you like tips for dealing with snow or travel advice in snowy conditions?";
+        return "Snow events are less frequent in our area of focus, but we can share guidelines on urban adaptation to changing weather patterns. Would you like details about snow-specific measures?";
     } else {
         // Generic response for open-ended questions
-        return "Thank you for your question. Could you provide more details so I can assist you better?";
+        return "Thank you for reaching out to the Secretariat. Could you clarify your question or specify the type of information you need? We're here to help with heat, drought, and climate resilience efforts.";
     }
 }
